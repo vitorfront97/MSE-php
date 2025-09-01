@@ -24,31 +24,31 @@
         <div class="formTop">
           <div class="esquerda">
             <input type="text" value="Pessoa Jurídica" name="pessoaJuridica" readonly>
-            <input type="text" value="CNPJ" name="cnpj" readonly>
-            <input type="text" value="Nome Fantasia" name="nomeFantasia" readonly>
+            <input type="text" placeholder="CNPJ" id="cnpj" name="cnpj">
+            <input type="text" placeholder="Nome Fantasia" id="nomeFantasia" name="nomeFantasia" readonly>
             <label for="icms">ICMS:</label>
             <select id="contribuinte" name="contribuinte">
               <option>Contribuinte ICMS</option>
               <option>Contribuinte Insento</option>
               <option>Não Contribuinte</option>
             </select>
-            <input type="text" placeholder="Telefone" name="telefone">
-            <input type="text" value="Endereço" name="endereco" readonly>
-            <input type="text" value="Complemento" name="complemento" readonly>
-            <input type="text" value="País" name="pais" readonly>
-            <input type="text" value="CEP" name="cep" readonly>
+            <input type="text" placeholder="Telefone" id="telefone" name="telefone" readonly>
+            <input type="text" placeholder="Endereço" id="endereco" name="endereco" readonly>
+            <input type="text" placeholder="Complemento" id="complemento" name="complemento" readonly>
+            <input type="text" placeholder="País" id="pais" name="pais" readonly>
+            <input type="text" placeholder="CEP" id="cep" name="cep" readonly>
           </div>
           <div class="direita">
             <input type="text" value="Fornecedor" name="fornecedor" readonly>
-            <input type="text" value="Razão Social" name="razaoSocial" readonly>
+            <input type="text" placeholder="Razão Social" id="razaoSocial" name="razaoSocial" readonly>
             <input type="text" value="Inscrição Estadual/Isento" name="inscricao" readonly>
             <label for="icms">Situação:</label>
-            <input type="text" value="Situação" name="situacao" readonly>
-            <input type="text" placeholder="E-mail" name="email">
-            <input type="text" value="Número" name="numero" readonly>
-            <input type="text" value="Bairro" name="bairro" readonly>
-            <input type="text" value="Estado" name="estado" readonly>
-            <input type="text" value="Município" name="municipio" readonly>
+            <input type="text" placeholder="Situação" id="situacao" name="situacao" readonly>
+            <input type="text" placeholder="E-mail" id="email" name="email" readonly>
+            <input type="text" placeholder="Número" id="numero" name="numero" readonly>
+            <input type="text" placeholder="Bairro" id="bairro" name="bairro" readonly>
+            <input type="text" placeholder="Estado" id="estado" name="estado" readonly>
+            <input type="text" placeholder="Município" id="municipio" name="municipio" readonly>
           </div>
         </div>
         <div class="formBottom">
@@ -227,5 +227,8 @@
       <small style="color: #c0bcbc">2025 &copy; Portal MSE - 2025 3.5.3</small>
     </footer>
   </main>
+  <script>
+    
+  </script>
 </body>
 </html>

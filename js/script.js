@@ -44,3 +44,31 @@ function verSenha(e, senhaVisivel) {
     senha.type = "password";
   };
 };
+
+// buscando os campos readonly do formulário a partir do cnpj com api
+window.onload = function() {
+  const cnpj = document.getElementById('cnpj');
+  
+  cnpj.addEventListener('change', () => {
+    fetch('consulta.php?cnpj=' + cnpj.value)
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById("nomeFantasia").value = data.fantasia;
+      document.getElementById("telefone").value = data.telefone;
+      document.getElementById("endereco").value = data.logradouro;
+      document.getElementById("complemento").value = data.complemento;
+      document.getElementById("pais").value = data.pais || "Brasil";
+      document.getElementById("cep").value = data.cep;
+      document.getElementById("razaoSocial").value = data.nome;
+      document.getElementById("situacao").value = data.situacao;
+      document.getElementById("email").value = data.email;
+      document.getElementById("numero").value = data.numero;
+      document.getElementById("bairro").value = data.bairro;
+      document.getElementById("estado").value = data.uf;
+      document.getElementById("municipio").value = data.municipio;
+    })
+    .catch(err => console.error("Erro na consulta:", err));
+  });
+};
+
+
