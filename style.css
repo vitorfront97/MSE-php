@@ -5,7 +5,17 @@
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-input[type="text"], input[type="password"] {
+.mensagem {
+  color: white;
+  font-weight: bolder;
+}
+
+.error {
+  color: rgb(218, 77, 77);
+  font-size: 12px;
+}
+
+input[type="text"], input[type="password"], .select2-container--default .select2-selection--single {
   padding: 10px 16px;
   width: 100%;
   height: 46px;

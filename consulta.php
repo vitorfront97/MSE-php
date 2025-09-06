@@ -7,12 +7,7 @@
       exit;
   }
 
-  $cnpj = preg_replace('/\D/', '', $_GET['cnpj']); // remove tudo que não for número
-  if (strlen($cnpj) != 14) {
-      echo json_encode(["erro" => "CNPJ inválido"]);
-      exit;
-  }
-
+  $cnpj = $_GET['cnpj'];
   $url = "https://www.receitaws.com.br/v1/cnpj/" . $cnpj;
 
   // Inicializa cURL
